@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+  <style>
+    
+    .block {
+      animation: autoShow;
+      animation-timeline: view();
+    }
+
+    @keyframes autoShow {
+      from {
+        opacity: 0;
+        transform: translateY(0%) scale(0);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(100%), scale(1);
+      }
+    }
+
+    
+    .block1 {   /* For the hero section */
+      animation: autoShow;
+      animation-timeline: view();
+    }
+
+    @keyframes autoShow {
+      from {
+        opacity: 0;
+        transform: translateY(100%) scale(0);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(100%), scale(1);
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <section class="navbar" style="padding-top: 0">
+    <header class="header-main">
+      <nav>
+        <a href="#hero1" class="home">Home</a>
+        <a href="#skills1">My Skills</a>
+        <a href="#projects1">My Projects</a>
+        <a href="#about1">About Me</a>
+        <a href="#contact1" class="contact">Contact Me</a>
+        <span class="span1" style="margin-top: 15px;"></span>
+      </nav>
+    </header>
+  </section>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero block1" id="hero1" style="top: -11.6rem">
+      <div class="main-intro">
+        <div><h1 style="font-size: 3rem;text-align: center;">WELCOME<br>TO MY FIRST<br>WEBSITE</h1></div>
+        <div><p><span class="hey">Hey!!!👋 <br>This is Anirudh</span><br>Very eager to learn tech stuff <br> and build many products.</p></div>
+      </div>
+
+      <div class="main-quotes">
+        <div class="quote2"><p>"For the best return on your money, pour<br>your purse into your head." <br><br><span style="padding-left: 1rem">- Benjamin Franklin</span></p></div>
+      </div>
+    </section>
+
+    <!-- My Skills -->
+    <section class="skills block" id="skills1">
+      <h2 class="skills-heading">Skills</h2>
+      <div class="container_sk">
+        <!-- First row -->
+        <div class="row1">
+          <div class="bar">
+            <div class="info">
+              <img class="img_sk" src="./images/logos/Java.jpeg" alt="Java Logo"/>  
+              <br>
+              <span class="span2">Java</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img class="img_sk" src="./images/logos/HTML5.jpeg" alt="HTML Logo"/>  
+              <br>
+              <span class="span2">HTML</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img class="img_sk" src="./images/logos/CSS.jpeg" alt="CSS Logo"/>  
+              <br>
+              <span class="span2">CSS</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img class="img_sk" src="./images/logos/Bootstrap.jpeg" alt="Bootstrap Logo"/>  
+              <br>
+              <span class="span2">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row2">
+          <div class="bar">
+            <div class="info">
+              <img class="img_sk" src="./images/logos/C++.jpeg" alt="C++ Logo"/>  
+              <br>
+              <span class="span2">C++</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img class="img_sk" src="./images/logos/DSA.jpg" alt="DSA Logo"/>  
+              <br>
+              <span class="span2">DSA</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img class="img_sk" src="./images/logos/Irritating.jpeg" alt=""/>  
+              <br>
+              <span class="span3">IRRITATING MY COMPUTER</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+   
+    <h2 class="projects-heading">Projects</h2>
+    <div class="container_pr">
+      <div class="img1">
+        <h1 class="pt_head">Responsive Pricing Table using FlexBox</h1>
+        <div class="inner1">
+          <a href="https://anirudharavalli.github.io/FlexBox-Table/"><img class="pricing_table" src="./images/project_images/Pricing_Table.png" alt="Sample Pricing Table Using FlexBox"></a>
+          <p>This is a responsive sample pricing table I created using FlexBox while learning it.</p>
+        </div>
+      </div>
+
+      <div class="img2">
+        <h1 class="pt_head">Mondrian Painting using Grid Layout </h1>
+        <div class="inner2">
+          <a href="https://anirudharavalli.github.io/Mondrian-Painting/"><img class="pricing_table" src="./images/project_images/Modrian_Painting.jpg" alt="Mondrian Paintingh using Grid Layout"></a>
+          <p>This is a sample Mondrian Painting I replicated using Grid Layout.</p>
+        </div>
+      </div>
+
+      <div class="img3">
+        <h1 class="pt_head">Tindog Website</h1>
+        <div class="inner3">
+          <a href="https://anirudharavalli.github.io/TinDog-Sample-Website/"><img class="pricing_table" src="./images/project_images/Tindog_Website.jpg" alt="A Sample Website for Dogs dating"></a>
+          <p>This is a responsive sample Website I built using the Bootstrap framework. </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- About Me Section -->
+    <section class="about" id="about1">
+
+    </section>
+
+  </main>
+
+
+  <!-- Contact Me Section -->
+   <section class="contact" id="contact1">
+
+   </section>
+
+</body>
+</html>
