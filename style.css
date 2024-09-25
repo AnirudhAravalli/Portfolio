@@ -138,7 +138,7 @@ a:nth-child(5):hover~.span1 {
     display: flex; 
     justify-content: center;
     align-items: center;
-    margin-top: 2.4rem;
+    margin-top: 6.65rem;
 }
 
 
@@ -283,18 +283,6 @@ a:nth-child(5):hover~.span1 {
 
 /* Projects Section */
 
-/* .projects {
-    background: var(--bgcolor);
-    color: var(--text-color);
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative; */
-    /* scroll-margin-top: -2rem; */
-    /* top: 60rem;
-} */
-
 .projects-heading {
     display: flex;
     justify-content: center;
@@ -305,19 +293,11 @@ a:nth-child(5):hover~.span1 {
     font-weight: bolder;
     padding-top: 25%;
 }
-/* .container_pr {
-    border-radius: 1rem;
-    margin-top: 6%;
-    display: grid;
-    grid-template-columns: 1fr; 
-    grid-template-rows: 1fr 1fr 1fr;
-    justify-content: center;
-} */
 
 .pricing_table {
     position: relative;
     top: 0.75rem;
-    height: 30rem;
+    height: 37rem;
     width: auto;
 }
 
@@ -336,7 +316,7 @@ a:nth-child(5):hover~.span1 {
     background-repeat: no-repeat; 
     background-position: center;
     width: 100%;
-    height: 36rem;
+    height: 100vh;
     position: relative;
     top: 14rem;
 }
@@ -366,7 +346,7 @@ a:nth-child(5):hover~.span1 {
     background-repeat: no-repeat; 
     background-position: center;
     width: 100%;
-    height: 35rem;
+    height: 100vh;
     position: relative;
     top: 52rem;
 }
@@ -377,7 +357,7 @@ a:nth-child(5):hover~.span1 {
     background-repeat: no-repeat; 
     background-position: center;
     width: 100%;
-    height: 35rem;
+    height: 100vh;
     position: relative;
     top: 78rem;
     margin-bottom: 120rem;
@@ -389,7 +369,7 @@ a:nth-child(5):hover~.span1 {
 
 .arch_contact_us_duplicate * {
     font-family: Nunito, sans-serif;
-    background-color: #121212; /* Dark background color */
+    background-color: #000000;
     color: #ffffff;
   }
   
@@ -431,7 +411,7 @@ a:nth-child(5):hover~.span1 {
     margin-bottom: 0px;
     margin-left: auto;
     justify-content: flex-start;
-    background-color: #1e1e1e;
+    background-color: #000000;
   }
   
   .arch_contact_us_duplicate .responsive-cell-block {
@@ -446,7 +426,7 @@ a:nth-child(5):hover~.span1 {
     padding-right: 50px;
     padding-bottom: 0px;
     padding-left: 50px;
-    background-color: #1e1e1e;
+    background-color: #000000;
   }
   
   .arch_contact_us_duplicate .responsive-container-block.container {
@@ -583,11 +563,7 @@ a:nth-child(5):hover~.span1 {
   .arch_contact_us_duplicate .input-element {
     background-color: #f3f2cf;
   }
-  
-  .arch_contact_us_duplicate .icon-block.social-icon {
-    fill: #b0ab4d;
-  }
-  
+
   @media (max-width: 1024px) {
     .arch_contact_us_duplicate .text-blk.section-head {
       font-size: 55px;
