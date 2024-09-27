@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --image: url(./images/BG.webp);
+    --bordercolor: #c13584;
+    --bgcolor: #000000;
+    --second-bg-color: #161616;
+    --text-color: #ffffff;
+    --main-color: #7b4bb7;
+    letter-spacing: 0.05rem;
+}
+
+html {
+    scroll-behavior: smooth;    
+}
+
+body {
+    background-color: var(--bgcolor) !important;
+    min-height: 100vh;
+    padding-top: 4.375rem;
+}
+  
+/* Nav Bar */
+.contact {
+    padding-right: 10px;
+    padding-left: 10px; 
+    margin-left: 10px; 
+    z-index: 1001; 
+    display: inline-block; 
+    margin-right: 0;
+}
+
+.home {
+    padding-left: 0.6875rem;
+    
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 3.4rem;
+    width: 100%;
+    padding: 0.625rem 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+nav a:focus:not(:focus-visible) {
+    outline: none;
+  }
+  
+  nav a:focus-visible {
+    outline: 2px solid #7b4bb7; 
+  }
+  
+
+nav {
+    position: relative;
+    width: 100%;
+    height: 5.125rem; 
+    right: 3.125rem; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0 auto; 
+    border-radius: 1.875rem;
+}
+
+a {
+    position: relative;
+    color: #fff;
+    font-weight: bolder;
+    text-decoration: none;
+    z-index: 2;
+    cursor: pointer; 
+    padding: 0 1.625rem; 
+    font-size: 1.3em; 
+    margin: 0 0.625rem; 
+    text-align: center;
+    outline: none;
+}
+
+.span1 {
+    position: absolute;
+    top: 0.0625rem;
+    left: 0;
+    width: 100%; 
+    height: 3.125rem; 
+    border-radius: 1.875rem; 
+    background: linear-gradient(45deg, #616161, #525151);
+    transition: 0.45s;
+    z-index: 1;
+    opacity: 0.7;
+}
+
+a:nth-child(1):hover~.span1 {
+    left: 2%;
+    width: 9%;
+}
+
+a:nth-child(2):hover~.span1 {
+    left: 19%; 
+    width: 18.5%; 
+}
+
+a:nth-child(3):hover~.span1 {
+    left: 45.5%;
+    width: 22%; 
+}
+
+a:nth-child(4):hover~.span1 {
+    left: 75.65%; 
+    width: 20.5%; 
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    color: #fff;
+    height: 100vh;
+    width: 100%;
+    padding-left: 1.25rem;
+    background-image: url(./images/Portrait.png), var(--image);
+    background-size: 110vh, cover;
+    background-repeat: no-repeat;
+    background-position: 17rem 100%, center;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.4rem;
+}
+
+
+.hey {
+    display: block;
+    position: relative;
+    font-size: 1.75rem; 
+    font-weight: bold;
+    padding-top: 4%;
+    margin-left: 2.5rem;
+}
+
+.main-intro > h1 {
+    position: relative;
+    text-align: center;
+}
+
+.main-intro {
+    position: relative;
+    left: -19.2%;
+    top: -6rem;
+}
+
+.hero > div > p {
+    color: #fff;
+    position: relative;
+    text-align: center;
+    font-size: 1.25rem; 
+    line-height: 1.875rem; 
+    left: -14.375rem; 
+}
+
+.main-intro > div:nth-child(2) > p:nth-child(1) {
+    text-align: center;
+}
+
+.main-quotes > .quote2 {
+    position: relative;
+    left: 9rem;
+    border-left: 0.25rem solid var(--bordercolor); 
+    font-size: 1.2rem; 
+    padding-left: 1rem;
+    text-align: center;
+}
+
+.main-quotes {
+    position: relative;
+    margin-top: 4rem;
+    left: 3rem;
+}
+
+/* Skills Section */
+
+.img_sk {
+    width: auto;
+    height: 7rem;
+    margin-top: 0.625rem;
+    margin-bottom: -0.625rem;
+}
+
+.skills {
+    background: var(--bgcolor);
+    color: var(--text-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 3%;
+}
+
+.skills-heading {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 5.5rem;
+    color: #ffffff;
+    font-weight:bolder;
+}
+
+
+
+.container_sk {
+    border-radius: 1rem;
+    width: 75%;
+    margin: auto;
+    margin-top: -0.5rem;
+    display: grid;
+    grid-template-columns: 1fr; 
+    grid-gap: 0rem; 
+    justify-content: center;
+}
+
+.row1, .row2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: var(--image);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    width: 100%; 
+    height: auto; 
+}
+
+.span3 {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bar {
+    margin: 1.20rem;
+    padding: 0.625rem;
+    padding-left: 0px;
+    padding-right: 0px;
+    border-radius: 1rem;
+    background: var(--bgcolor);
+    transition: 0.3s ease;
+}
+
+.bar:hover {
+    box-shadow: 0 0 0.625rem 0.25rem var(--main-color);
+    transform: scale(120%);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 12rem;
+    width: 12rem;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.span2 {
+    font-size: 2rem;
+    font-weight: bolder;
+    margin-left: 0.5rem;
+}
+
+
+/* Projects Section */
+
+.projects-heading {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    color: var(--text-color);
+    font-size: 5.5rem;
+    font-weight: bolder;
+    padding-top: 22%;
+}
+
+.pricing_table {
+    position: relative;
+    top: 0.75rem;
+    height: 30rem;
+    width: auto;
+}
+
+.pt_head {
+    margin-top: -4rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--text-color);
+    text-align: center;
+    padding-top: 0.5rem;
+}
+
+.img1 {
+  background-image: url(./images/BG.webp);
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center;
+  width: 100%;
+  height: 36rem;
+  position: relative;
+  top: 14rem;
+}
+
+.inner1, .inner2, .inner3 {
+    display: flex;
+    justify-content: center;
+    gap: 9.5rem;
+    margin-left: 6.25rem;
+    width: 75%;
+}
+
+.inner1 > p, .inner2 > p, .inner3 > p {
+    font-size: 2.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    margin-left: 0.25rem;
+    margin-right: 2rem;
+}
+
+.img2 {
+    background-image: url(./images/BG.webp);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    width: 100%;
+    height: 35rem;
+    position: relative;
+    top: 52rem;
+}
+
+.img3 {
+    background-image: url(./images/BG.webp);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    width: 100%;
+    height: 35rem;
+    position: relative;
+    top: 78rem;
+    margin-bottom: 120rem;
+}
+
+body {
+  background-color: #000000; 
+  color: #ffffff; 
+}
+
+.contact {
+  padding: 2rem;
+  background-image: url(./images/BG.webp);
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center;
+  text-align: center;
+  border-radius: 8px; 
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5); 
+  opacity: 0;
+  transform: translateY(20px);
+  width: 100%;
+  margin-bottom: 7%;
+}
+
+.contact > h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffffff; 
+}
+
+.contact > p, .contact >h4 {
+  margin-bottom: 1rem;
+  color: #e0e0e0; 
+  animation: fadeIn 0.6s forwards;
+}
+
+.social-media {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.social-media > a > img{
+  margin-top: 0.25rem;
+}
+
+/* Button Styles */
+.button {
+  background-color: #fff;
+  display: inline-block;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
+}
+
+.button::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  z-index: 0;
+}
+
+.button-tilt-left:hover {
+  background-color: #ffffff;
+  color: #fff;
+  transform: perspective(1000px) scale(1.3) rotate(-8deg); 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5); 
+  box-shadow: 0 0 0.625rem 0.25rem #e4dcdc;
+
+}
+
+.button-tilt-right:hover {
+  background-color: #ffffff;
+  color: #ffffff;
+  transform: perspective(1000px) scale(1.3) rotate(8.5deg); 
+  box-shadow: 0 0 0.625rem 0.35rem #e4dcdc;
+
+}

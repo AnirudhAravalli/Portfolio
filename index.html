@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;300;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    
+    .block {
+      animation: autoShow;
+      animation-timeline: view();
+    }
+
+    @keyframes autoShow {
+      from {
+        opacity: 0;
+        transform: translateY(5%) scale(0);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(70%), scale(1);
+      }
+    }
+
+    /* For the hero section */
+    .block1 {   
+      animation: autoShow1;
+      animation-timeline: view();
+    }
+
+    @keyframes autoShow1 {
+      from {
+        opacity: 0;
+        transform: translateY(100%) scale(0);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(100%), scale(1);
+      }
+    } */
+
+  </style>
+</head>
+  <body>
+    <!-- Navigation Bar -->
+    <section class="navbar" style="padding-top: 0">
+      <header class="header-main">
+        <nav>
+          <a href="#hero1" class="home">Home</a>
+          <a href="#skills1">My Skills</a>
+          <a href="#projects1">My Projects</a>
+          <a href="#contact1">Contact Me</a>
+          <span class="span1" style="margin-top: 15px;"></span>
+        </nav>
+      </header>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero block1" id="hero1" style="top: -11.6rem">
+      <div class="main-intro">
+        <div><h1 style="font-size: 3rem;text-align: center; margin-left: 2rem;">WELCOME<br>TO MY FIRST<br>WEBSITE<br><br></h1></div>
+        <div><p><span class="hey">Hey!!!👋 <br><br>This is Anirudh</span><br><span style="padding-left: 2rem">Very eager to learn tech stuff <br> and build many products.</span></p></div>
+      </div>
+
+      <div class="main-quotes">
+        <div class="quote2"><p>"For the best return on your money,<br>pour your purse into your head." <br><br><span style="padding-left: 1rem">- Benjamin Franklin</span></p></div>
+      </div>
+    </section>
+
+    <!-- My Skills -->
+    <section class="skills block" id="skills1" >
+      <h2 class="skills-heading">Skills</h2>
+      <div class="container_sk">
+        <!-- First row -->
+        <div class="row1">
+          <div class="bar">
+            <div class="info">
+              <img class="img_sk" src="./images/logos/Java.jpeg" alt="Java Logo"/>  
+              <br>
+              <span class="span2">Java</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img class="img_sk" src="./images/logos/HTML5.jpeg" alt="HTML Logo"/>  
+              <br>
+              <span class="span2">HTML</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img class="img_sk" src="./images/logos/CSS.jpeg" alt="CSS Logo"/>  
+              <br>
+              <span class="span2">CSS</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img class="img_sk" src="./images/logos/Bootstrap.jpeg" alt="Bootstrap Logo"/>  
+              <br>
+              <span class="span2">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row2">
+          <div class="bar">
+            <div class="info">
+              <img class="img_sk" src="./images/logos/C++.jpeg" alt="C++ Logo"/>  
+              <br>
+              <span class="span2">C++</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img class="img_sk" src="./images/logos/DSA.jpg" alt="DSA Logo"/>  
+              <br>
+              <span class="span2">DSA</span>
+            </div>
+          </div>
+          <div class="bar">
+            <div class="info">
+              <img class="img_sk" src="./images/logos/Irritating.jpeg" alt=""/>  
+              <br>
+              <span class="span3">IRRITATING MY COMPUTER</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Project Section -->
+    <section class="projects block" id="projects1">
+    <h2 class="projects-heading">Projects</h2>
+    </section>
+
+      <section class="img1 block">
+        <h3 class="pt_head">Responsive Pricing Table using FlexBox</h3>
+        <div class="inner1">
+          <a href="https://anirudharavalli.github.io/FlexBox-Table/"><img class="pricing_table" src="./images/project_images/Pricing_Table.png" alt="Sample Pricing Table Using FlexBox"></a>
+          <p style="line-height: 1.5;">This is a responsive sample pricing table I created using FlexBox while learning it.</p>
+        </div>
+      </section>
+
+      <section class="img2 block">
+        <h3 class="pt_head">Mondrian Painting using Grid Layout </h3>
+        <div class="inner2">
+          <a href="https://anirudharavalli.github.io/Mondrian-Painting/"><img class="pricing_table" src="./images/project_images/Modrian_Painting.jpg" alt="Mondrian Paintingh using Grid Layout"></a>
+          <p style="line-height: 1.5;">This is a sample Mondrian Painting I replicated using Grid Layout.</p>
+        </div>
+      </section>
+
+      <section class="img3 block">
+        <h3 class="pt_head">Tindog Website</h3>
+        <div class="inner3">
+          <a href="https://anirudharavalli.github.io/TinDog-Sample-Website/"><img class="pricing_table" src="./images/project_images/Tindog_Website.jpg" alt="A Sample Website for Dogs dating"></a>
+          <p style="line-height: 1.5;">This is a responsive sample Website I built using the Bootstrap framework. </p>
+        </div>
+      </section>
+
+
+    <!-- About Me and Contact Me Section -->
+    <section class="contact block" id="contact1" data-aos="fade-up">
+      <span style="font-size: 3rem; text-align: center;"><h2>GET IN TOUCH</h2></span>
+      <div style="font-size: 1.5rem; margin-top: 2rem; line-height: 1.5;"><p>Hello, I’m Anirudh and I’m an asp web developer with a passion for learning new technologies. I’m currently looking for new opportunities and would love to hear from you.</p></div>
+      <div style="font-size: 2rem; margin-top: 2rem; line-height: 1.5;"><p>You can reach me at <span style="font-weight: bold;">anirudh.aravalli@gmail.com</span> or connect with me on social media.</p></div>
+      
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/anirudh-a-25b28a257/" class="button button-tilt-left"><img src="./images/logos/linkedin.svg" alt="LinkedIn" width="30" height="38"></a>
+        <a href="https://github.com/AnirudhAravalli" class="button button-tilt-right"><img src="./images/logos/github.svg" alt="GitHub" width="30" height="38"></a>
+        <a href="https://www.instagram.com/anirudh.aravalli/" class="button button-tilt-left"><img src="./images/logos/instagram.svg" alt="Instagram" width="30" height="38"></a>
+        <a href="https://www.reddit.com/user/aranirudh/" class="button button-tilt-right"><img src="./images/logos/reddit.svg" alt="Instagram" width="30" height="38"></a>
+      </div>
+    </section>
+  </body>
+</html>
+
+<!--  -->
